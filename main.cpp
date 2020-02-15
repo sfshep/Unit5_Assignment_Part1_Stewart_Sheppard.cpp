@@ -1,5 +1,6 @@
 // Stewart Sheppard
-// Unit 5 Assignment Part 1
+// Unit 5 Assignment Part 1 and Part 2
+// Repl Editor / GitHub
 // COCS 1436 - 57002
 //Calculate weekly pay
 
