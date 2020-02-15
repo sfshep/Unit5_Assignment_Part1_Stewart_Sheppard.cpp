@@ -25,20 +25,22 @@ int main()
           cout << weeklyPay (32.5, 100.25,"Dr_T", 1) << endl;
 
           double weeklyPay (double, double, string, int);
+          string status = "";
+          string reset = "\x1b[0m";
           
 
 //Extending Code - Part 2 or 3
 
 //display "TCC-TR IS COOL" in all lower case
  
-  cout << endl; 
+  cout << reset << endl;
   locale loc; 
   string coolPhrase = "TCC-TR IS COOL";
   for(int i = 0; i < coolPhrase.length(); i++ )
   {
     cout << tolower(coolPhrase[i], loc);
   }
-  cout  << endl;
+  cout << reset  << endl;
 
 // display "i will succeed at c++" in upper case letters
   cout << endl;
@@ -47,7 +49,7 @@ int main()
   {
     cout << toupper(upperPhrase[i], loc);
   }
-  cout << endl;
+  cout <<  endl;
 
 
   return 0;
