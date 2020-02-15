@@ -13,7 +13,6 @@ using namespace std;
 double weeklyPay (double, double, string, int);
 
 
-
 int main() 
 {
           cout << fixed << setprecision(2);
@@ -26,6 +25,30 @@ int main()
           cout << weeklyPay (32.5, 100.25,"Dr_T", 1) << endl;
 
           double weeklyPay (double, double, string, int);
+          
+
+//Extending Code - Part 2 or 3
+
+//display "TCC-TR IS COOL" in all lower case
+ 
+  cout << endl; 
+  locale loc; 
+  string coolPhrase = "TCC-TR IS COOL";
+  for(int i = 0; i < coolPhrase.length(); i++ )
+  {
+    cout << tolower(coolPhrase[i], loc);
+  }
+  cout  << endl;
+
+// display "i will succeed at c++" in upper case letters
+  cout << endl;
+  string upperPhrase = "i will succeed at c++";
+  for (int i = 0; i < upperPhrase.length(); i++)
+  {
+    cout << toupper(upperPhrase[i], loc);
+  }
+  cout << endl;
+
 
   return 0;
 }
@@ -42,7 +65,7 @@ double weeklyPay (double hours, double rate, string name, int empType)
   string color = "\x1b[" + to_string(32) + ";4m"; //green and underlined
   string color2 = "\x1b[" + to_string(34) + ";1m"; //blue
 
-  //display the name on screen CAP and in colore
+  //display the name on screen CAP and in color
   cout << color << endl;  //format a new line before each name
   for(int i = 0; i < name.length(); i++ )
   {
